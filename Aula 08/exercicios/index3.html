@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interagindo com o usuario</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+<body>
+    <h1> Calculadora de soma</h1>
+    <p>Digite ou selecione dois numeros para somar</p>
+    <input type="number" name="num1" id="num1"> +
+    <input type="number" name="num2" id="num2">
+    <input type="button" value="somar" onclick="somar()">
+    <div id="resultado">
+        (aperte em SOMAR)
+    </div>
+
+    <script>
+        function somar() {
+        var texto_n1 = document.getElementById('num1')
+        var texto_n2 = document.getElementById('num2')
+        var res = document.getElementById('resultado')
+        n1 = Number(texto_n1.value)
+        n2 = Number(texto_n2.value)
+        var soma = n1 + n2
+        res.innerHTML = `A soma entre ${n1} com ${n2} equivale a ${soma}`}
+
+    </script>
+
+</body>
+</html>

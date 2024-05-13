@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex001</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            color: white;
+            text-shadow: 1px 1px 3px black;
+        }
+        p {
+            background-color: rgb(0, 78, 52);
+            width: fit-content;
+            height: 40px;
+            border-radius: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ola, mundo!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <script>
+        var n1 = parseInt(window.prompt('Digite um numero:')) 
+        //parseInt/parseFloat faz conversao da var em numero
+        //ao usar somente Number, o JS se vira pra fazer a conta
+        var n2 = parseInt(window.prompt('Digite outro numero:'))
+        var soma = n1 + n2
+        window.alert('A soma e igual a ' + String(soma))
+        //para converter de numero pra string = String(n) ou n.toString()
+        window.alert(`A soma de ${n1} e ${n2} vai ser igual a ${soma}`)
+        //o ${} facilita a vida, lembrando que precisa ser entre crases
+
+        //outros comandos sao: .lenght (comprimento da string) toUpperCase()
+        //toLowerCase()
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <style>
+        div#area {
+            background-color: lightgreen;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 2em;
+            text-shadow: 2px 2px 3px black;
+
+        }
+        div#area2 {
+            background-color: lightgreen;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 2em;
+            text-shadow: 2px 2px 3px black;
+            margin-top: 20px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="area">
+        interaja
+    </div>
+    
+    
+<script>
+    var a = document.querySelector('div#area')
+    
+    a.addEventListener('click', clicou)
+    a.addEventListener('mouseenter', hover)
+    a.addEventListener('mouseleave', nohover)
+
+    function clicou() {
+        
+        a.innerText = 'Clicou!'
+        a.style.background = 'red'
+    }
+    function hover() {
+        a.innerText = 'Interaja'
+        a.style.background = 'green'
+    }
+    function nohover() {
+        a.innerText = 'Interaja'
+        a.style.background = 'lightgreen'
+    }
+</script>
+</body>
+</html>

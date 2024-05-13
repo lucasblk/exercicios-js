@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+    <style>
+        body {
+            font: normal 20px Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <script>
+        var nome = window.prompt('Digite seu nome')
+        document.write(`Ola, <strong> ${nome}</strong>! Seu nome tem ${nome.length} letras <br>`)
+        document.write(`Seu nome em maiusculas fica ${nome.toUpperCase()} <br>`)
+        document.write(`Seu nome em minusculas fica ${nome.toLowerCase()}`)
+    </script>
+    <!--Para tratar numeros, tem o toFixed() que vai mostrar as casas decimais, e o 
+        
+    .toLocaleString('pt-BR', style: 'currency', currency: 'BRL') para mostrar o valor no formato de salario por exemplo.-->
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pais de origem</title>
+</head>
+<body>
+    <h1>De onde voce veio?</h1>
+    Qual seu pais de origem? 
+    <input type="text" name="pais" id="pais" autocomplete="off">
+    <input type="button" value="verificar" onclick="verify()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function verify() {
+            var name = document.getElementById('pais')
+            var res = document.querySelector('div#res')
+            var pais = String(name.value)
+            if (pais == 'Brasil' || pais == 'brasil') {
+                res.innerHTML = 'Voce eh brasileiro'
+            } else {
+                res.innerHTML = 'Voce eh estrangeiro'
+            }
+            }
+    </script>
+</body>
+</html>

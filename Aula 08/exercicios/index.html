@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos no DOM</title>
+    <style>
+        body {
+            background-color: rgb(170, 255, 255);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos no DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JS</p>
+    <div id="msg">Clique em Mim</div>
+    <p class="a">E tem o querySelector</p>
+<!--Em JS, eu posso acessar qualquer marcador de html ou css seguindo o caminho do objeto, os caminhos podem comecar do >> window.document.html.head.body >> cada ponto indica o sentido do caminho-->
+    <script>
+        var h1 = document.getElementsByTagName('h1')[0];
+        document.write('O paragrafo diz: <br> ' + h1.innerText)//innetText pega o texto puro, innerHTML vai pegar o codigo inteiro com as tag
+        h1.style.color = 'white'
+
+        var corpo = window.document.body
+
+        corpo.style.background = 'black'
+
+        var p2 = document.getElementsByTagName('p')[1];
+        document.write('O paragrafo diz: <br> ' + p2.innerText)
+
+        p2.style.color = 'white'
+
+        var d = document.getElementById('msg')
+        d.style.background = 'white'
+
+        document.getElementsByTagName('p')[0].style.color = 'white' //pode ir direto pra modificacao tambem , sem criar uma variavel
+//pode usar o getelement por nome, por classe, etc... a logica eh a mesma. elementos no plural precisa dos colchetes [] pra indicar qual deve ser modificado.
+        var p3 = document.querySelector('p.a')
+        p3.style.background = 'white'
+
+</script>
+</body>
+</html>
