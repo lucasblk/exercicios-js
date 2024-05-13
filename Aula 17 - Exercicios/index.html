@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Numeros</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        header {
+            color: white;
+            text-shadow: 0px 0px 5px black;
+            text-align: center;
+        }
+
+        main {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px black;
+            width: 500px;
+            padding: 10px;
+            margin: auto;
+        }
+
+        select#tabela {
+            width: 180px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Analisador de Numeros</h1>
+    </header>
+    <main>
+        <div>
+            <label for="numero">Numero (entre 1 a 100)</label><input type="number" name="numero" id="numero">
+            <input type="button" value="Adicionar" onclick="add()">
+            <p>
+                <select name="tabela" id="tabela" size="7">
+
+                </select>
+            </p>
+            <p><input type="button" value="Finalizar" onclick="finalizar()"></p>
+        </div>
+        <div id="res">
+
+        </div>
+    </main>
+    <footer>
+        <p> &copy;Lucas Lopes </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
